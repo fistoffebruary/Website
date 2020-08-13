@@ -11,22 +11,22 @@
     <meta name="generator" content="Hugo 0.71.1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
-    
+
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
-    
+
     <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-    
+
   </head>
 
   <body>
     <div id="wrap">
 
-      
+
       <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -39,21 +39,21 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-      
-        
+
+
         <li><a href="/blog/">BLOG</a></li>
-        
+
         <li><a href="/projects/">PROJECTS</a></li>
-        
-        <li><a href="/resume/">RESUME</a></li>
-        
-      
+
+        <li><a href="/resume/resume.pdf">RESUME</a></li>
+
+
       </ul>
     </div>
   </div>
 </nav>
 
-      
+
       <div class="container">
         <div class="blog-post">
           <h3>
@@ -64,17 +64,17 @@
           <h4>
           April 2, 2014
             &nbsp;&nbsp;
-            
+
             <span class="label label-success">go</span>
-            
+
             <span class="label label-success">golang</span>
-            
+
             <span class="label label-success">templates</span>
-            
+
             <span class="label label-success">themes</span>
-            
+
             <span class="label label-success">development</span>
-            
+
           </h4>
         </div>
         <div class="panel panel-default">
@@ -151,19 +151,19 @@ the /layout/ directory within Hugo.</p>
 a map, array or slice. The following are different examples of how to use
 range.</p>
 <p><strong>Example 1: Using Context</strong></p>
-<pre><code>{{ range array }} 
+<pre><code>{{ range array }}
     {{ . }}
 {{ end }}
 </code></pre>
 <p><strong>Example 2: Declaring value variable name</strong></p>
-<pre><code>{{range $element := array}} 
-    {{ $element }} 
+<pre><code>{{range $element := array}}
+    {{ $element }}
 {{ end }}
 </code></pre>
 <p><strong>Example 2: Declaring key and value variable name</strong></p>
 <pre><code>{{range $index, $element := array}}
-    {{ $index }} 
-    {{ $element }} 
+    {{ $index }}
+    {{ $element }}
 {{ end }}
 </code></pre>
 <h3 id="conditionals">Conditionals</h3>
@@ -179,7 +179,7 @@ logic in Go Templates. Like range, each statement is closed with <code>end</code
 <pre><code>{{ if isset .Params &quot;title&quot; }}&lt;h4&gt;{{ index .Params &quot;title&quot; }}&lt;/h4&gt;{{ end }}
 </code></pre>
 <p><strong>Example 2: If -&gt; Else</strong></p>
-<pre><code>{{ if isset .Params &quot;alt&quot; }} 
+<pre><code>{{ if isset .Params &quot;alt&quot; }}
     {{ index .Params &quot;alt&quot; }}
 {{else}}
     {{ index .Params &quot;caption&quot; }}
@@ -196,7 +196,7 @@ and skips the block if the variable is absent.</p>
 <pre><code>{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}
 </code></pre>
 <p><strong>Example 5: If -&gt; Else If</strong></p>
-<pre><code>{{ if isset .Params &quot;alt&quot; }} 
+<pre><code>{{ if isset .Params &quot;alt&quot; }}
     {{ index .Params &quot;alt&quot; }}
 {{ else if isset .Params &quot;caption&quot; }}
     {{ index .Params &quot;caption&quot; }}
@@ -231,7 +231,7 @@ Stuff Here
 </code></pre>
 <p>Could be rewritten as</p>
 <pre><code>{{  isset .Params &quot;caption&quot; | or isset .Params &quot;title&quot; | or isset .Params &quot;attr&quot; | if }}
-Stuff Here 
+Stuff Here
 {{ end }}
 </code></pre>
 <h2 id="context-aka-the-dot">Context (aka. the dot)</h2>
@@ -317,7 +317,7 @@ so, such as in this example:</p>
               <hr>
               <div class="related-posts">
                 <h5>Related Posts</h5>
-                
+
                   <div class="row">
                     <div class="col-sm-4 col-md-4 col-lg-4">
                       <h6 style="text-align: right">
@@ -330,7 +330,7 @@ so, such as in this example:</p>
                       </h6>
                     </div>
                   </div>
-                
+
               </div>
             </div>
           </div>
@@ -340,8 +340,8 @@ so, such as in this example:</p>
   <script type="text/javascript">
 
     (function() {
-      
-      
+
+
       if (window.location.hostname == "localhost")
         return;
 
@@ -356,10 +356,10 @@ so, such as in this example:</p>
 </div>
         </div>
       </div>
-      
+
     </div>
 
-    
+
     <footer>
   <div id="footer">
     <div class="container">
@@ -383,6 +383,6 @@ so, such as in this example:</p>
 
 
 
-    
+
   </body>
 </html>
